@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/root_padding"
+    tools:context=".ui.activities.detail.DetailActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayoutLeft"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/chart"
+        app:layout_constraintEnd_toStartOf="@id/tableLayoutRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/symbol" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditSymbol" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/price" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditPrice" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/difference" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditDifference" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/volume" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditVolume" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/offer" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditOffer" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/bid" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditBid" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutRight"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tableLayoutLeft"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/daily_min" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditDailyMin" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/daily_max" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditDailyMax" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/count" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditCount" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/max" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditMax" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/min" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.textview.MaterialTextView android:id="@+id/txtEditMin" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/status" />
+
+            <com.google.android.material.textview.MaterialTextView android:text="@string/dot" />
+
+            <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imgStatus" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tableLayoutLeft" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

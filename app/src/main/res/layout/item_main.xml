@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootItemMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:padding="@dimen/padding"
+            tools:ignore="UselessParent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtEditSymbol"
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtEditBid"
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtEditDifference"
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtEditVolume"
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtEditOffer"
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtEditPrice"
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgStatus"
+                style="@style/TableSevenItemStyle" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

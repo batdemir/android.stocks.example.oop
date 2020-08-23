@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.main.MainActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/radius_background"
+        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/softGray3"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:padding="@dimen/padding"
+            tools:ignore="UselessParent">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/symbol" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/price" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/difference" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/volume" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/offer" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/bid" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TableSevenItemStyle"
+                android:singleLine="true"
+                android:text="@string/status" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tableLayout"
+        app:reverseLayout="false"
+        app:spanCount="1"
+        tools:listitem="@layout/item_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

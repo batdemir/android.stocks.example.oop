@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name" translatable="false">Stocks.Example.OOP</string>
+    <string name="data_wedge_intent_filter_action" translatable="false">com.aurabilisim.barcode.ACTION</string>
+    <string name="data_wedge_intent_key_data" translatable="false">com.symbol.datawedge.data_string</string>
+
+    <!-- ALERT DIALOG KEYS -->
+    <string name="alert_dialog_key_exception" translatable="false">exception</string>
+    <string name="alert_dialog_key_permission" translatable="false">permission</string>
+    <string name="alert_dialog_key_barcode_dialog" translatable="false">barcodeDialog</string>
+    <string name="alert_dialog_key_exit" translatable="false">exit</string>
+
+    <!-- GENERAL -->
+    <string name="dot" translatable="false">\t:\t</string>
+    <string name="barcode_receive" translatable="false">Barcode Receive</string>
+
+    <!-- ALERT DIALOG MESSAGE -->
+    <string name="message_please_activate_the_permissions_in_the_Applications_app_name_permissions_section">Please, active the permissions \" Applications > %1$s > Permissions\" section.</string>
+    <string name="message_are_you_sure_exit_application">Are you sure you want to exit the application?</string>
+    <string name="message_please_enter_barcode">Please enter a barcode.</string>
+
+    <!-- EXCEPTION MESSAGE -->
+    <string name="exception_last_process_failed">Last process failed.</string>
+    <string name="exception_system_closed_by_unexpected_error">System closed by unexpected error.</string>
+    <string name="exception_please_contact_your_manager">Please contact your manager.</string>
+
+    <!--LOGIN-->
+    <string name="copyright_2020_all_rights_reserved_batdemir" translatable="false">Copyright © 2020\nAll Rights Reserved-BATDEMIR</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="message_please_enter_user_name">Please enter user name !</string>
+    <string name="message_please_enter_password">Please enter password !</string>
+
+    <string name="title">IMKB Hisse Ve Endeksler</string>
+    <string name="title_detail">Detail</string>
+    <string name="title_home">Home</string>
+    <string name="title_main">Main</string>
+
+    <string name="home_imkb_hisse_senetleri_endeksler">IMKB Hisse Senetleri/Endeksler</string>
+    <string name="symbol">Sembol</string>
+    <string name="price">Fiyat</string>
+    <string name="difference">% Fark</string>
+    <string name="volume">Hacim</string>
+    <string name="offer">Alış</string>
+    <string name="bid">Satış</string>
+    <string name="daily_min">Günlük Düşük</string>
+    <string name="daily_max">Günlük Yüksek</string>
+    <string name="count">Adet</string>
+    <string name="max">Tavan</string>
+    <string name="min">Taban</string>
+    <string name="status">Değişim</string>
+    <string name="all">All</string>
+    <string name="increasing">Increasing</string>
+    <string name="decreasing">Decreasing</string>
+    <string name="volume_30">Volume 30</string>
+    <string name="volume_50">Volume 50</string>
+    <string name="volume_100">Volume 100</string>
+
+</resources>
