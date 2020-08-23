@@ -4,11 +4,11 @@
 This application is an application that shows the IMKB stocks and indices, and you can access the 
 search and details.
 ## Screens
-![Home Screen](/screens/Screenshot_20200823-180829_StocksExampleOOP.jpg) 
-![Main Screen Result](/screens/Screenshot_20200823-180836_StocksExampleOOP.jpg)
-![Main Screen Filter](/screens/Screenshot_20200823-180841_StocksExampleOOP.jpg)
-![Main Screen Search](/screens/Screenshot_20200823-180940_StocksExampleOOP.jpg) 
-![Detail Screen](/screens/Screenshot_20200823-180950_StocksExampleOOP.jpg)
+![Home Screen](/screens/Screenshot_20200823-180829_StocksExampleOOP.png) 
+![Main Screen Result](/screens/Screenshot_20200823-180836_StocksExampleOOP.png)
+![Main Screen Filter](/screens/Screenshot_20200823-180841_StocksExampleOOP.png)
+![Main Screen Search](/screens/Screenshot_20200823-180940_StocksExampleOOP.png) 
+![Detail Screen](/screens/Screenshot_20200823-180950_StocksExampleOOP.png)
 ## Used Libraries
 ### Retrofit
 Retrofit turns your REST API into a Java interface.
