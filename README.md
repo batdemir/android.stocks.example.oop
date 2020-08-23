@@ -19,7 +19,7 @@ for Android, iOS, Flutter, and the web.
 [Material Design](https://material.io/)
 ### MPAndroidChart
 A powerful & easy to use chart library for Android
-[MPAndroidChart] (https://github.com/PhilJay/MPAndroidChart)
+[MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
 ### Batdemir Library
 Batdemir Library is a library that I developed myself. It contains functions and components that I 
 frequently use in coding. If we need to examine in detail, it gives the model used for components 
